@@ -1,0 +1,4 @@
+coloredlogs
+dicttoxml
+cryptography
+requests

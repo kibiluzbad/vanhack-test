@@ -1,0 +1,13 @@
+version: '2'
+services:
+  receiver:
+    build: receiver/.
+    volumes:
+    - ./received:/work
+  sender:
+    build: sender/.
+    volumes:
+    - ./to-send:/work
+    environment:
+    - POST_URL=http://receiver
+
